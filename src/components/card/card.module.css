@@ -1,0 +1,13 @@
+.wrap {
+    width: 21rem;
+    height: 34rem;
+    background-color: rgb(37, 42, 49);
+    border-radius: 2rem;
+    padding: 0.75rem;
+    transition: 0.1s;
+}
+
+.wrap:hover, :focus {
+    background-color: rgb(60, 66, 76);
+    cursor: pointer;
+}
