@@ -1,9 +1,21 @@
-.wrap{
-    width: 100%;
+.wrap {
     display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cardsWrap{
+    width: 100%;
+    display: grid;
     gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    grid-template-columns: repeat(auto-fill, 22rem);
     padding: 2rem;
+    justify-content: center;
+}
+
+.text{
+    color: rgb(93, 103, 119);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1rem;
 }

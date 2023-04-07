@@ -1,13 +1,68 @@
 .wrap {
     width: 21rem;
-    height: 34rem;
+    height:26rem;
     background-color: rgb(37, 42, 49);
     border-radius: 2rem;
-    padding: 0.75rem;
+    padding: 1rem;
     transition: 0.1s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    perspective: 800px;
 }
 
 .wrap:hover, :focus {
     background-color: rgb(60, 66, 76);
     cursor: pointer;
 }
+
+.cardInner {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.cardInner.isFlipped {
+    transform: rotateY(180deg);
+}
+
+.cardFace{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    
+}
+
+.cardFaceBack{
+    transform: rotateY(180deg);
+}
+
+.imageWrap{
+    width: 19rem;
+    background-color: rgb(80, 86, 106);
+    height: 19rem;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.image {
+    width: 19rem;
+    height: 19rem;
+    object-fit: cover;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* .image:hover, .image:focus{
+    transform: scale(1.05);
+} */
+
+.name {
+    padding: 1rem;
+
+}
+
