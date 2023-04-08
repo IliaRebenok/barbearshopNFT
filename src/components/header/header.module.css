@@ -20,6 +20,7 @@
     padding: 1rem;
     font-size: 1rem;
     transition: 0.2s ease-in-out;
+    box-shadow: 0 0 0.5rem 0.5rem rgba(23, 26, 30, 0.5);
 }
 
 .input:active, .input:focus  {
