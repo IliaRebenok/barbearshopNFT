@@ -1,7 +1,7 @@
 .wrap{
     display: block;
     width: 80%;
-    margin: 0 auto 1rem;
+    margin: 0 auto;
     min-height: 8rem;
     font-size: 2rem;
     padding: 1rem;
@@ -14,7 +14,6 @@
     border: 0.2rem solid rgb(60, 66, 76);
     box-sizing: content-box;
     height: 1rem;
-    min-width: 15rem;
     width: 50%;
     max-width: 30rem;
     border-radius: 1rem;
@@ -35,4 +34,18 @@
 .text{
     color: rgb(93, 103, 119);
     font-size: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .wrap {
+        width: 90%;
+        margin: 0 auto;
+        min-height: 8rem;
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .name {
+        font-size: 1rem;
+    }
 }
