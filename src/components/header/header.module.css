@@ -1,26 +1,38 @@
 .wrap{
     display: block;
     width: 80%;
-    margin: 0 auto 2rem;
-    height: 8rem;
+    margin: 0 auto 1rem;
+    min-height: 8rem;
     font-size: 2rem;
     padding: 1rem;
 }
 
 .input {
-    background-color: rgba(230,230,230,0.1);
-    border: 0.2rem solid rgba(148, 148, 148, 0);
+    position:fixed;
+    z-index: 5;
+    background-color: rgb(60, 66, 76);
+    border: 0.2rem solid rgb(60, 66, 76);
     box-sizing: content-box;
     height: 1rem;
-    width: 15rem;
+    min-width: 15rem;
+    width: 50%;
+    max-width: 30rem;
     border-radius: 1rem;
     padding: 1rem;
     font-size: 1rem;
-    transition: 0.4s ease-in-out;
-    margin-bottom: 2rem;
+    transition: 0.2s ease-in-out;
 }
 
 .input:active, .input:focus  {
     outline: none;
-    border: 0.2rem solid rgb(60, 66, 76);
+    border: 0.2rem solid rgb(97, 107, 122);
+}
+
+.title{
+    margin:4rem 0 1rem;
+}
+
+.text{
+    color: rgb(93, 103, 119);
+    font-size: 1rem;
 }
