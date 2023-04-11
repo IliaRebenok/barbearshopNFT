@@ -20,6 +20,8 @@ import bearVenusImage from '../img/nfts/10.jpg'
 import bearVenusQR from '../img/qrCodes/10.jpg'
 import frozyBearImage from '../img/nfts/11.jpg'
 import frozyBearQR from '../img/qrCodes/11.jpg'
+import sirBearLemonImage from '../img/nfts/12.jpg'
+import sirBearLemonQR from '../img/qrCodes/12.jpg'
 
 export const NFTs = [
     {
@@ -87,5 +89,11 @@ export const NFTs = [
         name: 'Frozy Bear',
         image: frozyBearImage,
         qrCode: frozyBearQR,
+    },
+    {
+        id: 12,
+        name: 'Sir Bear Lemon',
+        image: sirBearLemonImage,
+        qrCode: sirBearLemonQR,
     },
 ]
