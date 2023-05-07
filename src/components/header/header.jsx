@@ -9,14 +9,14 @@ const Header = ({ setSearch }) => {
         <div className={styles.wrap}>
             <input
                 className={styles.input}
-                placeholder='Search your bear'
+                placeholder='Search your art'
                 type='text'
                 onChange={(e) => setSearch(e.target.value)}
             />
 
-            <h2 className={styles.title}>The BarBearShop AR collection</h2>
+            
             <div className={styles.text}>
-                Click the NFT to get the qr code for AR effect
+                Click the art to get the qr code for AR effect
             </div>
 
         </div>

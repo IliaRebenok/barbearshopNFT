@@ -1,15 +1,18 @@
 .wrap {
     width: 21rem;
     height:26rem;
-    background-color: rgb(37, 42, 49);
+    background-color:  rgb(237, 239, 243);
+    /* border: solid 0.1rem rgb(138, 139, 144); */
+    box-shadow: 0 0 0.2rem 0.2rem rgba(23, 26, 30, 0.2);
     border-radius: 2rem;
     padding: 1rem;
     transition: 0.1s;
     perspective: 800px;
+    transition: 0.3s;
 }
 
 .wrap:hover, :focus {
-    background-color: rgb(60, 66, 76);
+    background-color: rgb(151, 161, 223);
     cursor: pointer;
 }
 
@@ -33,7 +36,12 @@
     align-items: center;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    transition: 0.3s;
 }
+.cardFace:hover, :focus{
+    color: rgb(255, 241, 138);
+}
+
 
 .cardFaceBack{
     transform: rotateY(180deg);
@@ -60,6 +68,8 @@
     padding: 0 1rem;
     width: 100%;
     text-align: start;
+    color:inherit; 
+
 }
 
 @media screen and (max-width: 400px) {
